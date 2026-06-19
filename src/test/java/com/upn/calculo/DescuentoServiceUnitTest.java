@@ -7,12 +7,14 @@ public class DescuentoServiceUnitTest {
 
     private final DescuentoService servicio = new DescuentoService();
 
+    //Testea el % de descuento para 1000
     @Test
     public void testDescuentoMaximo() {
         double descuento = servicio.calcularDescuentoMonto(1000);
         assertEquals(150.0, descuento, "El descuento para 1000 debería ser el 15% (150)");
     }
 
+  //Testea el % de descuento para montos menores a 500
     @Test
     public void testSinDescuento() {
         double descuento = servicio.calcularDescuentoMonto(100);
