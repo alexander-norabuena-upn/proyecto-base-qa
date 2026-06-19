@@ -5,7 +5,7 @@ on:
     branches: [ "main", "develop" ]
   pull_request:
     branches: [ "main" ]
-
+  workflow_dispatch: # <--- Esto habilita el botón manual
 jobs:
   build-and-test:
     name: Compilación y Ejecución de Pruebas
